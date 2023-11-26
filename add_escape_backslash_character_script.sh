@@ -18,13 +18,17 @@ if [ -z "$input" ]
 		#Var $input has no content
         	printf  " " 
 	else 
-		  output=$(echo $input | txt2html)
-    
-		  for str in ${specialCharacters[@]}; do
-  		    output=$(echo $output |  sed "s/['$str']/\\\&/g")
-			done
+		  	# in this example i convert text to html but you can just remove the "| txt2html" 
+    			output=$(echo $input | txt2html)
 
-      # after all the characters is add a escape in front of the double quote " " because i was not able to store a doule quote it in a array          
-		  output=$(echo $output | sed "s/['\"']/\\\&/g" )
+    
+                # in front of the double quote " " because i was not able to store a doule quote it in a array          
+	  	output=$(echo $output | sed "s/['\"']/\\\&/g" )
+
+    		for str in ${specialCharacters[@]}; do
+  		    output=$(echo $output |  sed "s/['$str']/\\\&/g")
+		done
+
+    
 		  echo $output
 fi
