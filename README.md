@@ -13,3 +13,14 @@ You can fill a variable and add this to the command or integrate this in some ba
 input=$(cat somefile.txt); ./this_script.sh $input
 
 ```
+
+
+Sometimes you need to set some things in case you use a asteriks or if you only see one word, first run
+
+```shell
+set +f
+GLOBIGNORE=*
+```
+
+you can add a ascape or change it to anything else. Double quotes are done seperatly because i was not able to run it from the array.
+
