@@ -1,10 +1,8 @@
-## Add escape backslash scripted in bash
-# I made a small script to add a escape character behind some characters
+# Add escape backslash scripted in bash
+## I made a small script to add a escape character behind some characters
 
-this is a small script you can use to generate a output with escape characters. 
-Sometimes it handy to add them. 
-
-
+### this is a small script you can use to generate a output with escape characters. 
+ 
 You can fill a variable and add this to the command or integrate this in some bash script
 
 ```shell
