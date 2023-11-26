@@ -6,7 +6,7 @@ Sometimes it handy to add them.
 
 
 You can fill a variable and add this to the command or integrate this in some bash script
-'''bash
+```bash
 #for example you can do this
 input=$(cat somefile.txt); ./this_script.sh $input
-'''
+```
